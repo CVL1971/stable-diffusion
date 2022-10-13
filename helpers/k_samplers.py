@@ -50,7 +50,7 @@ def sampler_fn(
         "x": x,
         "sigmas": sigmas,
         "extra_args": {"cond": c, "uncond": uc, "cond_scale": args.scale},
-        "disable": False,
+        "disable": True,
         "callback": cb,
     }
     sampler_map = {
@@ -62,7 +62,7 @@ def sampler_fn(
         "euler_ancestral": sampling.sample_euler_ancestral,
     }
     
-    print("pre sampler_map")
+    
     samples = sampler_map[args.sampler](**sampler_args)
-    print("post sampler_map")
+   
     return samples
