@@ -62,6 +62,7 @@ def sampler_fn(
         "euler_ancestral": sampling.sample_euler_ancestral,
     }
     
+    print("pre sampler_map")
     samples = sampler_map[args.sampler](**sampler_args)
-    print(abcfffff)
+    print("post sampler_map)
     return samples
