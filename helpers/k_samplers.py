@@ -63,6 +63,4 @@ def sampler_fn(
     }
 
     samples = sampler_map[args.sampler](**sampler_args)
-    my_str = 'ERROR'
-    my_str[3] = 'G'
     return samples
