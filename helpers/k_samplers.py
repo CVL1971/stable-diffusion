@@ -64,5 +64,5 @@ def sampler_fn(
     
     print("pre sampler_map")
     samples = sampler_map[args.sampler](**sampler_args)
-    print("post sampler_map)
+    print("post sampler_map")
     return samples
